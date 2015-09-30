@@ -67,5 +67,8 @@
         android:text="Agregar contacto"
         android:id="@+id/btnAgregar"
         android:layout_below="@+id/cmpDireccion"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:onClick="onClick"
+        />
 </RelativeLayout>
