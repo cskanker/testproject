@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.cskanker.miscontactod.util.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="92dp"
+        android:layout_height="92dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:focusable="false"
+        android:src="@drawable/ic_contacto"
+        android:id="@+id/IvContactImage" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/IvContactImage"
+        android:layout_toLeftOf="@+id/checkbox"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/viewNombre"
+            android:focusable="false"
+            android:text="Large" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefono"
+            android:focusable="false"
+            android:id="@+id/viewTelefono" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:focusable="false"
+            android:id="@+id/viewEmail" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Direccion"
+            android:focusable="false"
+            android:id="@+id/viewDireccion" />
+    </LinearLayout>
+    
+    <!-- No se permite que el usuario de click sobre el checkBox, la clase CheclableRelativeLayout
+    se encarga de esta asignacion sobre cada contacto de manera independiente-->
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/checkbox"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/IvContactImage"
+        android:clickable="false"
+        android:focusable="false"/>
+
+</com.example.cskanker.miscontactod.util.CheckableRelativeLayout>
